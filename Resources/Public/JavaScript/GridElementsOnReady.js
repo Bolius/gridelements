@@ -22,7 +22,7 @@ define(['jquery', 'TYPO3/CMS/Backend/AjaxDataHandler', 'TYPO3/CMS/Backend/Storag
         openedPopupWindow: []
     };
 
-
+    AjaxDataHandler.identifier = {};
     AjaxDataHandler.identifier.allGridelementsToggle = '.t3js-toggle-gridelements-all';
     AjaxDataHandler.identifier.gridelementToggle = '.t3js-toggle-gridelements-list';
     AjaxDataHandler.identifier.allGridelementsColumnsToggle = '.t3js-toggle-gridelements-columns-all';
