@@ -25,6 +25,8 @@ if (TYPO3_MODE === 'BE') {
 
     $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFlexFormDSClass'][] = \GridElementsTeam\Gridelements\Hooks\BackendUtilityGridelements::class;
 
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['record_is_used'][] = \GridElementsTeam\Gridelements\Hooks\PageLayoutView::class . '->contentIsUsed';
+
     $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tx_templavoila_api']['apiIsRunningTCEmain'] = true;
 
     $GLOBALS['TYPO3_USER_SETTINGS']['columns']['dragAndDropHideNewElementWizardInfoOverlay'] = [
